@@ -1,0 +1,13 @@
+//8. Write a program to print squares of the first 10 natural numbers
+
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int i;
+    for(i=1;i<=10;i++)
+    {
+        printf("the squar of %d is=%d\n",i,i*i);
+    }
+    return 0;
+}
