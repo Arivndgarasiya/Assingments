@@ -1,14 +1,20 @@
-//12. Assume price of 1 USD is INR 76.23. Write a program to take the amount in INR and 
-//convert it into USD.
+//12. Write a program to check whether a given alphabet is in uppercase or lowercase
 
 #include<stdio.h>
 
 int main(){
-    int  INR;
-    float USD;
-    printf("Enter the INR\n");
-    scanf("%d",&INR);
-    USD=INR*76.45;
-    printf("the result id %f",USD);
+    char ch;
+    printf("Enter the Alpha bate \n");
+    scanf("%c",&ch);
+
+    if(ch>='A' && ch<='Z')
+    {
+        printf("the Alphabate is Upper case");
+    }
+    else if(ch>='a' && ch<='z')
+    {
+        printf("the Alphabate is lower case");
+    }
+    
     return 0;
 }

@@ -1,12 +1,19 @@
-//2. Write a program to print a given number without its last digit.
+//2. Write a program to check whether a given number is divisible by 5 or not
 
 #include<stdio.h>
 
 int main(){
-    int number,digit;
-    printf("enter your number\n");
-    scanf("%d",&number);
-    digit=number/10;
-    printf("number without last digits is =%d",digit);
+    int num;
+
+    printf("Enter the number\n");
+    scanf("%d",&num);
+    if(num %5 ==0)
+    {
+        printf("the number is divisibe by 5");
+
+    }
+    else{
+        printf("the number is not divisible by 5");
+    }
     return 0;
 }

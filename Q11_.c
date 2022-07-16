@@ -1,13 +1,34 @@
-//Write a program to input a number from the user and also input a digit. Append a 
-//digit in the number and print the resulting number. (Example - number=234 and 
-//digit=9 then the resulting number is 2349)
+//11. Write a program to take marks of 5 subjects from the user. Assume marks are given 
+//out of 100 and passing marks is 33. Now display whether the candidate passed the 
+//examination or failed
+
 #include<stdio.h>
 
 int main(){
-    int num,sum;
-    printf("Enter the number\n");
-    scanf("%d",&num);
-    sum=num/100+num/10%10+num%10;
-    printf("  %d%d",num,sum);
+
+
+int hindi,english,maths,science,sosci ,total;
+printf("Enter hindi marks\n");
+scanf("%d",&hindi);
+ printf("Enter english marks\n");
+scanf("%d",&english);
+printf("Enter maths marks\n");
+scanf("%d",&maths);
+printf("Enter science marks\n");
+scanf("%d",&science);
+printf("Enter sosci marks\n");
+scanf("%d",&sosci);
+
+total=(hindi+english+maths+science+sosci)/5;
+if(total<33 ||hindi<33 || english<33 || maths<33 || science<33 || sosci<33 )
+{
+    printf("your total marks is %d and you you are fail",total);
+
+}
+else{
+    printf("your total marks is %d and you you are pass",total);
+}
+
+
     return 0;
 }

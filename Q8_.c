@@ -1,20 +1,19 @@
-//8. Write a program to check whether the given number is even or odd using a bitwise 
-//operator
+//8. Write a program to check whether a given year is a leap year or not.
 
 #include<stdio.h>
 
 int main(){
-    int num;
-    printf("Enter the number \n");
-    scanf("%d",&num);
-    if(num&1)
+    int year;
+    printf("Enṭer the year \n");
+    scanf("%d",&year);
+     
+    if(year%400==0 || year%4==0 && year%100!=0)
     {
-        printf("number is odd ");
-    
-}
-    else{
-        printf("number is even");
+        printf("the year is leap year");
     }
+    else{
 
+        printf("the year is not a leap  leap year");
+    }
     return 0;
-}
+}   
